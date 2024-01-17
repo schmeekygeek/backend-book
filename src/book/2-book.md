@@ -9,5 +9,4 @@
     - url, uri and urn (diagram)
 -->
 
-# Why Golang?
-
+# Hello
