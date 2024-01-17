@@ -1,12 +1,14 @@
 .DEFAULT_GOAL := build
 
 build:
-	pandoc book.md -o book.pdf \
+	mkdir -p dist && \
+	pandoc src/*.md -o dist/book.pdf \
 		--table-of-contents \
 		--number-sections \
+		metadata.txt \
 		--pdf-engine=xelatex \
 		--indented-code-classes=javascript \
 		--highlight-style=monochrome \
 		-V documentclass=report \
 		-V papersize=A5 \
-		-V geometry:margin=1in
+		-V geometry:margin=0.5in
