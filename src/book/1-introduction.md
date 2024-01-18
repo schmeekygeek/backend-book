@@ -1,8 +1,7 @@
-\pagenumbering{gobble}
-
 # Introduction
-Backend Development for Beginners (using Go) is a book that teaches you about the fundamentals of backend development using Golang.
+***Backend Development for Beginners (using Golang)*** is a book that teaches you about the fundamentals of backend development using Golang.
 This book assumes no prior knowledge of backend development but requires that you have some programming experience.
+
 It consists of three parts: The first part contains fundamental concepts that you need to know as a backend developer, the second part is a short introduction to the Go programming language.
 And the third part contains a small e-commerce backend application that we will be building with Go.
 I will walk you through every part of the project, explaining things along the way.

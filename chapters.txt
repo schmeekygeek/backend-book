@@ -1,0 +1,12 @@
+- Introduction
+- Part 1
+  - What is backend development
+  - 3-tier application
+  - monolithic vs microservices architecture (diagram)
+  - HTTP (Hypertext transfer protocol)
+  - JSON
+  - architectural styles (Rest and Graphql)
+  - authorization and authentication (diagram)
+  - url, uri and urn (diagram)
+
+- Part 2

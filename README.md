@@ -1,8 +1,8 @@
 # Build locally
-Needs: pdfunite make pandoc
+Needs: `make`, `pandoc`
 
 ```bash
-make all
+make book
 ```
 
-the pdf should be available in the dist/ directory
+The pdf should be available in the `dist/` directory
