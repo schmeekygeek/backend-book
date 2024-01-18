@@ -4,7 +4,7 @@ This book assumes no prior knowledge of backend development but requires that yo
 
 It consists of three parts: The first part contains fundamental concepts that you need to know as a backend developer, the second part is a short introduction to the Go programming language.
 And the third part contains a small e-commerce backend application that we will be building with Go.
-I will walk you through every part of the project, explaining things along the way.
+I will walk you through every part of the project in the third part, explaining things along the way.
 But you need to follow along and type with me in order to get the most value out of this book.
 
 ## Who this book is for

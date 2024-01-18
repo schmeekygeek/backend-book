@@ -2,4 +2,5 @@
 title: Backend Development for Beginners (using Golang)
 author: Abdul Samad Shaikh
 language: en-US
+cover: src/book/images/cover.png
 ---

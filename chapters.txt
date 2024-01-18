@@ -1,11 +1,17 @@
 - Introduction
 - Part 1
   - What is backend development
-  - 3-tier application
-  - monolithic vs microservices architecture (diagram)
-  - HTTP (Hypertext transfer protocol)
-  - JSON
-  - architectural styles (Rest and Graphql)
+    - Why do we need a backend?
+    - JSON
+  - Internet protocols
+    - HTTP (Hypertext transfer protocol)
+      - Anatomy of a request
+      - response codes
+    - TCP
+  - Architectural patterns
+    - 3 way architecture
+    - monolithic vs microservices architecture (diagram)
+    - Rest and Graphql
   - authorization and authentication (diagram)
   - url, uri and urn (diagram)
 

@@ -1,9 +1,9 @@
 PANDOCFLAGS = --pdf-engine=xelatex \
-		--indented-code-classes=javascript \
-		--highlight-style=monochrome \
-		-V documentclass=report \
-		-V papersize=A5 \
-		-V geometry:margin=0.7in
+							--indented-code-classes=javascript \
+							--highlight-style=monochrome \
+							-V documentclass=report \
+							-V papersize=A5 \
+							-V geometry:margin=0.7in
 
 book:
 	mkdir -p dist && \
@@ -11,5 +11,6 @@ book:
 		-o dist/book.pdf \
 		--table-of-contents \
 		--number-sections \
+		-f markdown+implicit_figures \
 		metadata.txt \
 		$(PANDOCFLAGS)
