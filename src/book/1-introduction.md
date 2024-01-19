@@ -9,7 +9,7 @@ But you need to follow along and type with me in order to get the most value out
 
 ## Who this book is for
 This book is for anyone who is willing to learn and get into backend development.
-People switching careers from frontend development will also find this book a great starting guide to get into the field.
+People switching careers from frontend development may also find this book a great starting guide to get into the field.
 
 With concepts explained such as HTTP, JSON, authentication and authorisation, CRUD and others, it will give you a well-rounded introduction to backend development along with best practices and tips to build solid, performant and secure backend applications in Go.
 

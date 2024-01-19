@@ -8,7 +8,7 @@ Consider this analogy: You go to a restaurant, the waiter greets you, then sits 
 ```{=latex}
 \end{center}
 ```
-He comes back after some time to give you the ever-saddening news that the restaurant is out of noodles and asks if you would like some rice instead. You agree and then he disappears again. He comes back after sometime to serve you your desired rice.
+He returns after some time to give you the ever-saddening news that the restaurant is out of noodles and asks if you would like some rice instead. You agree, and he serves you rice a few minutes later.
 
 *What just happened?* To put it bluntly, the customer is the user. The waiter is the website that the user is going to interact with, and the kitchen is the server that the waiter will make requests to. When the server receives the request of noodles, it checks the refrigerator to see if it has the stock for said noodles or not. Here the refrigerator is the database, where all the ingredients of the kitchen are stored. This is obviously an oversimplification, but you get the idea.
 
@@ -27,6 +27,6 @@ The term API stands for Application Programming Interface. It is essentially wha
 ## Why do we need an API?
 When learning about backend development, it is important to understand why we need to have a backend in our application in the first place in order to truly understand its essence and the problems it solves. You might be thinking why the client-side application can't communicate with the database directly. Well, it can, but it **shouldn't**.
 
-Communicating with the database directly is simply not optimal, as we need to have a central point of data-access that would take a request, know if the request is coming from a person that has the authority to make that request, read some data, run some code, perform some theatrics on that data, read some more data, then finally wrap up everything neatly in a response-body to be sent back to the client. 
+Communicating with the database directly is simply not optimal, as we need to have a central point of data-access that would take a request, know if the request is coming from a person that has the authority to make that request, read some data, run some code, perform some theatrics on that data, read some more data, write some logs to disk, perform other actions to then finally wrap up everything neatly in a response-body to be sent back to the client. 
 
 In the next chapter we will understand how this communication between two machines over the internet takes place.
