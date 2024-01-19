@@ -15,7 +15,7 @@
     - 2-factor
     - multi-factor
   -  types of authorisation
-    - Token based authorisation
+    - role based auth
   - JSON
 - Databases
   - relational vs non-relational

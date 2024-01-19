@@ -40,14 +40,14 @@ Every single time a data packet is sent over TCP, an acknowledgement message is 
 
 Let's look at our next protocol based on TCP itself, HTTP.
 
-## HTTP (Hyper Text Transfer Protocol)
+## Hyper Text Transfer Protocol (HTTP)
 HTTP stands for Hyper Text Transfer Protocol.
 It is the foundational protocol for all types of data exchange on the web. Since HTTP connections are based on the request-response model of the internet, they are unidirectional. Which is why an HTTP connection, or an HTTP request, is always made by the client that is requesting a resource from the server. The server will then respond back with the requested resource, depending on whether the client is supposed to see it or not, in which case it will reject the request for said resource.
 
 Now, let's see what an HTTP request is made up of.
 
 ### Anatomy of an HTTP request
-An HTTP request contains many parts
+An HTTP request contains many parts that define 
 
 #### hi
 

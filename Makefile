@@ -3,7 +3,6 @@ PANDOCFLAGS = --pdf-engine=xelatex \
 							--highlight-style=monochrome \
 							-V documentclass=book \
 							-V papersize=A5 \
-							--include-before-body src/book/cover.md \
 							-V geometry:margin=0.7in
 
 book:
