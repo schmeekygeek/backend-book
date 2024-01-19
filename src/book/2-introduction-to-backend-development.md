@@ -16,7 +16,7 @@ Backend development is the server-side development of a web application. It most
 ```{=latex}
 \begin{center}
 ```
-![Business Logic](src/book/images/2.2.png "2.2"){width=50%}
+![Business Logic](src/book/images/2.2.png "2.2"){width=60%}
 ```{=latex}
 \end{center}
 ```

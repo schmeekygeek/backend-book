@@ -36,9 +36,19 @@ Two hosts over a network may begin communicating over TCP after they've made a s
 **Step 3:** Host #1 receives the SYN+ACK, then responds back with another ACK.
 
 ### What makes TCP so reliable?
-Every single time a data packet is sent over TCP, an acknowledgement message is sent by the receiver to the sender indicating that the message sent was received successfully. If the sender doesn't get the acknowledgement message after a set period of time, it simply sends the data packet again. This makes TCP highly reliable in environments where data is critical and cannot be lost. There may be instances of TCP not being reliable, but these are exceptionally rare.
+Every single time a data packet is sent over TCP, an acknowledgement message is sent by the receiver to the sender indicating that the message sent was received successfully. If the sender doesn't get the acknowledgement message after a set period of time, it simply sends the data packet again. This makes TCP highly reliable in environments where data is critical and cannot be lost. There may be instances of TCP not being reliable, but they are exceptionally rare.
 
 Let's look at our next protocol based on TCP itself, HTTP.
 
-## HTTP
-HTTP stands for Hyper Text Transfer Protocol. It is the most used protocol over the internet.
+## HTTP (Hyper Text Transfer Protocol)
+HTTP stands for Hyper Text Transfer Protocol.
+It is the foundational protocol for all types of data exchange on the web. Since HTTP connections are based on the request-response model of the internet, they are unidirectional. Which is why an HTTP connection, or an HTTP request, is always made by the client that is requesting a resource from the server. The server will then respond back with the requested resource, depending on whether the client is supposed to see it or not, in which case it will reject the request for said resource.
+
+Now, let's see what an HTTP request is made up of.
+
+### Anatomy of an HTTP request
+An HTTP request contains many parts
+
+#### hi
+
+There exists many other protocols such as FTP and MTP, but they are beyond the scope of what's required in this book.
