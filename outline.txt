@@ -6,6 +6,7 @@
 - Communication protocols
   - TCP
   - HTTP
+    - URL and URI
     - Anatomy of an http request
     - http Response codes
     - http Headers
