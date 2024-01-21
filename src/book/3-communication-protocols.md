@@ -4,7 +4,7 @@ Consider this scenario: You see an old woman at the supermarket that is having t
 ```{=latex}
 \begin{center}
 ```
-![Sam has trouble talking to an old woman](src/book/images/3.1.png){width=40%}
+![Sam has trouble talking to an old woman](src/book/images/3.1.png){width=30%}
 ```{=latex}
 \end{center}
 ```
@@ -53,10 +53,9 @@ There exists many other protocols such as FTP and MTP, but they are beyond the s
 ```{=latex}
 \end{center}
 ```
-
 ### URL and URI
 
-Now, you have most-likely seen this long string of *mumbo-jumbo*. Let's break it down to try and understand what these frightening symbols and characters actually mean.
+You have most likely seen this long string of *mumbo-jumbo*. Let's break it down to try and understand what these frightening symbols and characters actually mean.
 
 ```{=latex}
 \begin{center}
@@ -69,7 +68,7 @@ Now, you have most-likely seen this long string of *mumbo-jumbo*. Let's break it
 1. **Protocol:** The protocol for this URL
 2. **Host:** This is the host, or the server that we are making the request to.
 3. **Path:** The path, or the location of the resource on the host. Here, `/images` is the endpoint, and `image.jpg` is the resource we're requesting.
-4. **Query Paramaters:** These are query paramaters. Their purpose is to modify variables that the endpoint might expect to fine-tune our request. They begin with the *?* (Question mark). If there are two ore more such values, they are separated by an '*&*' (Amper's And).
+4. **Query Paramaters:** These are query paramaters. Their purpose is to modify variables that the endpoint might expect to fine-tune our request. They begin with a *?* (Question mark). If there are two ore more such values, they are separated by an '*&*' (Amper's And).
 
 What we just saw above was an example of a URL. **A URL stands for Uniform Resource Locater**. It *locates* the resource that we're trying to fetch from the host. Another term similar to URL is URI that stands for **Uniform Resource Identifier**. It is an identifier, or a name, for any resource that we're trying to request.
 
@@ -91,4 +90,4 @@ An HTTP request contains many parts that define
 
 ### HTTP Headers
 
-Now that we've covered the basics of HTTP requests, and what they're made up of, let's try and learn how APIs determine who to serve a request, and who to reject.
+In the next chapter we shall learn about a basic security mechanism that mostly all APIs implement in order to serve a request to the right client.

@@ -12,7 +12,6 @@
     - http Headers
 - authorisation and authentication (diagram)
   - types of authentication
-    - password based
     - 2-factor (2FA)
     - multi-factor
   -  types of authorisation
@@ -23,7 +22,7 @@
   - database scalability
   - ACID
   - CRUD
-- Architectural patterns
+  - Architectural patterns
   - 3-tier architecture
   - monolithic vs microservice architecture (diagram)
   - Rest and Graphql
