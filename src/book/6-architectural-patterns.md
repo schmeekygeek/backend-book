@@ -7,7 +7,7 @@ An application that consists of three parts: The UI, the backend and the databas
 ```{=latex}
 \begin{center}
 ```
-![3-tier application](src/book/images/4.1.png "4.1"){width=50%}
+![3-tier application](src/book/images/6.1.png){width=50%}
 ```{=latex}
 \end{center}
 ```
