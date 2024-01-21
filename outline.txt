@@ -8,12 +8,12 @@
   - HTTP
     - URL and URI
     - Anatomy of an http request
-    - http Response codes
+    - http status codes
     - http Headers
 - authorisation and authentication (diagram)
   - types of authentication
     - password based
-    - 2-factor
+    - 2-factor (2FA)
     - multi-factor
   -  types of authorisation
     - role based auth

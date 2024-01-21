@@ -44,6 +44,8 @@ Now, for our next protocol based on TCP itself, HTTP.
 HTTP stands for Hyper Text Transfer Protocol.
 It is the foundational protocol for all types of data exchange on the web. Since HTTP connections are based on the request-response model of the internet, they are unidirectional. Which is why an HTTP connection, or an HTTP request, is always made by the client that is requesting a resource from the server. The server will then respond back with the requested resource, depending on whether the client is supposed to see it or not, in which case it will reject the request for said resource.
 
+There exists many other protocols such as FTP and MTP, but they are beyond the scope of what's required in this book.
+
 ```{=latex}
 \begin{center}
 ```
@@ -85,4 +87,8 @@ In other words, **A URL is a subset of a URI.**
 ### Anatomy of an HTTP request
 An HTTP request contains many parts that define 
 
-There exists many other protocols such as FTP and MTP, but they are beyond the scope of what's required in this book.
+### HTTP Response Codes
+
+### HTTP Headers
+
+Now that we've covered the basics of HTTP requests, and what they're made up of, let's try and learn how APIs determine who to serve a request, and who to reject.
