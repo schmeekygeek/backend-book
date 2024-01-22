@@ -87,8 +87,19 @@ In other words, **A URL is a subset of a URI.**
 ### Anatomy of an HTTP request
 An HTTP request contains many parts that define 
 
-### HTTP Response Codes
-
 ### HTTP Headers
 
-In the next chapter we shall learn about a basic security mechanism that mostly all APIs implement in order to serve a request to the right client.
+### HTTP Status Codes
+When we interact with APIs, it is necessary for us to know what happened with the request that was sent. Has it completed successfully, did something go wrong, if yes, what went wrong? Is the request being processed, am I being redirected, etc, are many such questions that arise when a request is made. To address this problem, every HTTP response has a status code attached to it that determines if the request was a success or not. These status codes are also called response codes. They exist to inform the client about the status of the request. You have most likely heard about or seen the error: '404 - not found'. This is one of the most common HTTP status codes that informs the client that the resource you were looking for couldn't be found.
+
+A status code is a three-digit number. The first digit signals the general status or success/failure of a response. The next two digits are more specific as to what exactly happened. Here is a range for the status codes.
+
+Range          | Status
+-------------- | -------
+100 - 199      | Processing
+200 - 299      | Success or OK
+300 - 399      | Redirection
+400 - 499      | Client-side error
+500 - 599      | Server-side error
+
+In the next chapter we shall learn about two basic security mechanisms that APIs implement in order to serve the right client.
