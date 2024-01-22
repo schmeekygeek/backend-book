@@ -12,4 +12,4 @@ An application that consists of three parts: The UI, the backend and the databas
 \end{center}
 ```
 
-## Monoliths vs Microservices
+## Monoliths vs. Microservices

@@ -11,12 +11,12 @@ Consider this scenario: You see an old woman at the supermarket that is having t
 
 In order to verbally communicate with a person effectively, it is necessary that they speak the same language as you. Pretty much the same goes for computers trying to communicate with each other over the internet. If one speaks a language the other doesn't, they won't be able to exchange information at all.
 
-Basically, these 'languages' are called communication protocols. Communication protocols determine who speaks, what is being said, what can be said, how long it should take, etc. Computers over the internet communicate over a particular protocol. They are a pre-defined set of rules that needs to be followed in order to exchange information successfully.
+Basically, these 'languages' are called communication protocols. Communication protocols determine who speaks, what is being said, what can be said, how long it should take, etc. Computers over the internet communicate over a particular protocol. They are a pre-defined set of rules that needs to be followed in order for information to be exchanged successfully.
 
 Let's look at one of the most fundamental protocols of the internet, or, the **Internet Protocol** suite, a set of communication protocols, the transmission control protocol.
 
 ## Transmission Control Protocol (TCP)
-Transmission Control Protocol, or simply TCP, is a highly-reliable communication protocol which is connection oriented.  Many protocols are based on it, such as HTTP, FTP, Websocket, etc. It needs a stateful handshake to occur between two machines before packets of data can be exchanged.
+Transmission Control Protocol, or simply TCP, is a highly-reliable communication protocol which is connection oriented.  Many protocols are based on it, such as HTTP, FTP, Websocket, etc. It needs a stateful handshake to occur between two machines before packets of data can be exchanged. Let's learn how a TCP connection is made between two hosts.
 
 ### The 3-Way Handshake
 Two hosts over a network may begin communicating over TCP after they've made a successful handshake. This handshake occurs in 3 steps. Which is why it is called the 3-way handshake.
@@ -44,8 +44,6 @@ Now, for our next protocol based on TCP itself, HTTP.
 HTTP stands for Hyper Text Transfer Protocol.
 It is the foundational protocol for all types of data exchange on the web. Since HTTP connections are based on the request-response model of the internet, they are unidirectional. Which is why an HTTP connection, or an HTTP request, is always made by the client that is requesting a resource from the server. The server will then respond back with the requested resource, depending on whether the client is supposed to see it or not, in which case it will reject the request for said resource.
 
-There exists many other protocols such as FTP and MTP, but they are beyond the scope of what's required in this book.
-
 ```{=latex}
 \begin{center}
 ```
@@ -53,6 +51,9 @@ There exists many other protocols such as FTP and MTP, but they are beyond the s
 ```{=latex}
 \end{center}
 ```
+
+There exists many other protocols such as FTP and MTP, but they are beyond the scope of what's required in this book.
+
 ### URL and URI
 
 You have most likely seen this long string of *mumbo-jumbo*. Let's break it down to try and understand what these frightening symbols and characters actually mean.

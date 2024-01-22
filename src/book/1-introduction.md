@@ -9,7 +9,7 @@ I will walk you through every part of the project in the third part, explaining 
 but you need to follow along and type with me in order to get the most value out of this book.
 By the end of it all, you'll have many concepts pertaining to backend development understood, and a shiny new project to show off in front of your friends! ***(Heck yeah!)***.
 
-I have tried my best to not include superfluous details about everything, much of which will be easy to understand with just a little research on your own. This book aims to take away the overwhelmingness and provide you a headstart in your journey.
+I have tried my best to not include superfluous details about everything, much of which will be easy to understand with just a little research on your own. This book aims to take away the overwhelmingness that many beginners face and provide you a headstart in your journey.
 
 ## Who this book is for
 This book is for anyone who is willing to learn and get into backend development.
