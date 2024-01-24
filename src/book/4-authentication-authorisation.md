@@ -38,7 +38,7 @@ And finally, the **Admin** could be someone who'd have the authority to do many 
 
 Many a times, the terms authentication and authorisation are confused with each other and used interchangeably, but they're two very different terms. 
 
-**Authentication** is the process of determining if a person is the one he is claims to be.
+**Authentication** is the process of determining if a person is the one he claims to be.
 
 **Authorisation** is the process of determining if a person is allowed to perform a particular action or not.
 
