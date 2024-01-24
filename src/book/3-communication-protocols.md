@@ -68,7 +68,7 @@ You have most likely seen this long string of *mumbo jumbo*. Let's break it down
 
 1. **Protocol:** The protocol for this URL
 2. **Host:** This is the host, or the server that we are making the request to.
-3. **Path:** The path, or the location of the resource on the host. Here, `/images` is the endpoint, and `image.jpg` is the resource we're requesting.
+3. **Path:** The path, or the location of the resource on the host. Here, `/images` is the path, and `image.jpg` is the resource we're requesting.
 4. **Query Parameters:** These are query parameters. Their purpose is to modify variables that the endpoint might expect to fine-tune our request. They begin with a *?* (Question mark). If there are two or more such values, they are separated by an '*&*' (Amper's And).
 
 What we just saw above was an example of a URL. **A URL stands for Uniform Resource Locator**. It *locates* the resource that we're trying to fetch from the host. Another term similar to URL is URI that stands for **Uniform Resource Identifier**. It is an identifier, or a name, for any resource that we're trying to request.

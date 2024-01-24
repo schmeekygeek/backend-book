@@ -41,6 +41,6 @@
 - conditionals
 - arrays and slices
 - maps
-- working with json
+- working with json (marshalling and unmarshalling)
 
 - Part 3 (project using go)
