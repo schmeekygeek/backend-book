@@ -8,8 +8,8 @@
   - HTTP
     - URL and URI
     - Anatomy of an http request
-    - http status codes
     - http Headers
+    - http status codes
 - authorisation and authentication (diagram)
   - types of authentication
     - 2-factor (2FA)

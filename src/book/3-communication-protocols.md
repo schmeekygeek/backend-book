@@ -85,7 +85,7 @@ At first glance, it may seem that both of these terms mean the same thing: To id
 In other words, **A URL is a subset of a URI.**
 
 ### Anatomy of an HTTP request
-An HTTP request contains many parts that define 
+An HTTP request contains many parts that define
 
 ### HTTP Headers
 
@@ -94,12 +94,24 @@ When we interact with APIs, it is necessary for us to know what happened with th
 
 A status code is a three-digit number. The first digit signals the general status or success/failure of a response. The next two digits are more specific as to what exactly happened. Here is a range for the status codes.
 
-Range          | Status
+Range          | Message
 -------------- | -------
-100 - 199      | Processing
+100 - 199      | Informational
 200 - 299      | Success or OK
 300 - 399      | Redirection
 400 - 499      | Client-side error
 500 - 599      | Server-side error
+
+Here are some of the most common status codes used today:
+
+Code | Description
+---  | ----------
+200  | *OK* - The request was successful.
+201  | *CREATED* - Created a new resource, such as an account.
+400  | *BAD REQUEST* - Invalid or malformed request
+401  | *UNAUTHORISED* - Client is unauthorised, needs authentication.
+403  | *FORBIDDEN* - Client is forbidden to access the resource.
+404  | *NOT FOUND* - The resource/s requested couldn't be found
+500  | *INTERNAL SERVER ERROR* - Something went wrong at the server side
 
 In the next chapter we shall learn about two basic security mechanisms that APIs implement in order to serve the right client.
