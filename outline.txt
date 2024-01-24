@@ -24,8 +24,9 @@
   - ACID
   - CRUD
 - Architectural patterns
-  - 3-tier architecture
-  - monolithic vs microservice architecture (diagram)
+  - 3-tier architecture (monolithic)
+    - why they're bad
+  - microservices
   - Rest and Graphql
 
 - Part 2 (go tutorial)
