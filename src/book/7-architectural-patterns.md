@@ -25,7 +25,7 @@ An application that consists of the following three parts: The UI, the backend a
 \end{center}
 ```
 
-At a glance, this may seem like a backend solution that is good enough and will suffice a lot of business needs, but there are quite a few problems associated with it. Firstly, since these are singular applications, they are not fault-tolerant. Which means that if the server were to go down, every user of the product would have no service. Secondly, it is difficult to scale these kinds of applications on demand. You can scale vertically, but that can only help you for so long. And lastly, they're not very flexible. Let's look at a different architectural approach to solves this problem.
+At a glance, this may seem like a backend solution that is good enough and will suffice a lot of business needs, but there are quite a few problems associated with it. Firstly, since these are singular applications, they are not fault-tolerant. Which means that if the server were to go down, every user of the product would have no service. Secondly, it is difficult to scale these kinds of applications on demand. You can scale vertically, but that can only help you for so long. And lastly, they're not very flexible. Let's look at a different architectural approach that solves this problem.
 
 ## Microservices
 The microservice architecture aims to solve problems with the monolithic architecture by having multiple loosely coupled servers that run independently. Each server or node has its own purpose and communicate with each other via lightweight APIs.
@@ -40,6 +40,6 @@ For example, if you have an e-commerce application, you can have multiple servic
 \end{center}
 ```
 
-One of the biggest advantages of the microservice architecture is flexibility. If you have a change to make, you can simply do it in one of the services, instead of having to change it in the entire application and then stopping and restarting everything. It also means that your application will be fault-tolerant, meaning if something goes wrong and one of the servers go down, you will still continue to serve users. Even though some of them will be affected by it, it is still better than not being able to serve users at all.
+One of the biggest advantages of the microservice architecture is flexibility. If you have a change to make, you can simply do it in one of the services, instead of having to change it in the entire application and then stopping and starting everything. It also means that your application will be fault-tolerant, meaning if something goes wrong and one of the servers go down, you will still continue to serve users. Even though some of them will be affected by it, it is still better than not being able to serve users at all.
 
-The microservice architecture, if implemented correctly, is a great way to solve the problems with the monolithic architecture. But doing so incorrectly will lead to unnecessary complexity and maintenance costs.
+The microservice architecture, if implemented correctly, is a great way to solve the problems with the monolithic architecture. But implementing the microservices architecture without an appropriate reason will lead to unnecessary complexity and maintenance costs.
