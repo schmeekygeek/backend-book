@@ -16,12 +16,12 @@
     - multi-factor
   -  types of authorisation
     - role based auth
-- JSON
 - Databases
   - ACID
   - schema
   - relational vs non-relational
   - CRUD
+- JSON
 - Architectural patterns
   - 3-tier architecture (monolithic)
     - why they're bad

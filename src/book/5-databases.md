@@ -5,7 +5,7 @@ If you recall, in chapter I, we discussed briefly what a database is. By definit
 ```{=latex}
 \begin{center}
 ```
-![A basic database](src/book/images/6.1.png){width=30%}
+![A basic database](src/book/images/5.1.png){width=30%}
 ```{=latex}
 \end{center}
 ```
