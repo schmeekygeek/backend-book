@@ -1,5 +1,5 @@
 # Introduction
-***Backend Development for Beginners (using Golang)*** is a book that teaches you about the fundamentals of backend development using Golang.
+***Backend Development Diluted*** is a book that teaches you about the fundamentals of backend development using Golang.
 
 This book assumes no prior knowledge of backend development but requires that you have some programming experience.
 
