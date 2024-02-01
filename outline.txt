@@ -31,9 +31,7 @@
 - Part 2 (go tutorial)
 - Introduction to the Go programming language
   - (about go)
-  - installing go
   - first hello world
-  - main function
 - variables
 - functions
 - go modules
