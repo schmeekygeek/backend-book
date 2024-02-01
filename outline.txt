@@ -33,11 +33,17 @@
   - (about go)
   - first hello world
 - variables
+  - := operator
+  - var ident type
+  - var ident type = value
+  
 - functions
 - go modules
 - conditionals
-- arrays and slices
-- maps
+- data structures
+  - arrays
+  - slices
+  - maps
 - working with json (marshalling and unmarshalling)
 
 - Part 3 (project using go)
