@@ -65,4 +65,4 @@ We call `Println` from the `fmt` package to write 'Hello World' to the `stdout`.
 
 [^2]: https://en.wikipedia.org/wiki/Go_(programming_language)
 
-Let's learn about variables in go next.
+Let's learn about variables in Go next.
