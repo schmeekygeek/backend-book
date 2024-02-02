@@ -36,8 +36,8 @@
 - functions
 - go modules
 - conditionals
-- data structures
 - struct
+- data structures
   - arrays
   - slices
   - maps
