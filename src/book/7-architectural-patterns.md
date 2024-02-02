@@ -28,7 +28,7 @@ An application that consists of the following three parts: The UI, the backend a
 At a glance, this may seem like a backend solution that is good enough and will suffice a lot of business needs, but there are quite a few problems associated with it. Firstly, since these are singular applications, they are not fault-tolerant. Which means that if the server were to go down, every user of the product would have no service. Secondly, it is difficult to scale these kinds of applications on demand. You can scale vertically, but that can only help you for so long. And lastly, they're not very flexible. Let's look at a different architectural approach that solves this problem.
 
 ## Microservices
-The microservice architecture aims to solve problems with the monolithic architecture by having multiple loosely coupled servers that run independently. Each server or node has its own purpose and communicate with each other via lightweight APIs.
+The microservice architecture aims to solve problems with the monolithic architecture by having multiple loosely coupled servers that run independently. Each server or node has its own purpose and multiple nodes communicate with each other via lightweight APIs.
 
 For example, if you have an e-commerce application, you can have multiple services for each task: One for managing users, one for storing application-wide configurations, one for cropping and resizing images, interacting with a database and others. An API gateway sits between these services and will redirect requests to them accordingly.
 

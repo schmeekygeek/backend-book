@@ -33,14 +33,11 @@
   - (about go)
   - first hello world
 - variables
-  - := operator
-  - var ident type
-  - var ident type = value
-  
 - functions
 - go modules
 - conditionals
 - data structures
+- struct
   - arrays
   - slices
   - maps
