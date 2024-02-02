@@ -2,11 +2,11 @@
 
 Variables help store data in our programs. They have a name and a value.
 
-In Go, having unused variables in your code, unlike in other programming languages, is disallowed. Your code simply won't compile if you have a variable that hasn't been used somewhere. 
+> **Note**: In Go, having unused variables in your code, unlike in other programming languages, is disallowed. Your code simply won't compile if you have a variable that hasn't been used somewhere. 
 
 Let's go over the ways to create variables in Go.
 
-## Declare first, Assign later
+## Declare first, assign later
 You declare a variable in Go by using the following syntax:
 ```go
 var <identifier> <type>
