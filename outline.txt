@@ -35,12 +35,13 @@
 - variables
 - conditionals
 - functions
-- go modules
-- struct
+- pointers
+- structs and interfaces
 - data structures
   - arrays
   - slices
   - maps
 - working with json (marshalling and unmarshalling)
+- go packages
 
 - Part 3 (project using go)
