@@ -33,9 +33,9 @@
   - (about go)
   - first hello world
 - variables
+- conditionals
 - functions
 - go modules
-- conditionals
 - struct
 - data structures
   - arrays

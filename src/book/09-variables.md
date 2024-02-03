@@ -66,3 +66,5 @@ Using the `:=` operator:
 ```go
 foo, bar, baz := 1, "hello", true
 ```
+
+Let's learn how to write conditional statements.
