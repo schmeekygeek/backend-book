@@ -45,3 +45,4 @@
 - go packages
 
 - Part 3 (project using go)
+  - Project Outline
