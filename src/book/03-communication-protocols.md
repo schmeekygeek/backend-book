@@ -81,13 +81,13 @@ At first glance, it may seem that both of these terms mean the same thing: To id
 ```{=latex}
 \end{center}
 ```
-
 In other words, **A URL is a subset of a URI.**
 
 ### Anatomy of an HTTP request
-An HTTP request contains many parts that define
+An HTTP request sent by a client contains many parts that define its structure
 
 ### HTTP Headers
+HTTP headers let the client and servers share additional information when communicating using HTTP.
 
 ### HTTP Status Codes
 When we interact with APIs, it is necessary for us to know what happened with the request that was sent. Has it completed successfully, did something go wrong, if yes, what went wrong? Is the request being processed, am I being redirected, etc., are many such questions that arise when a request is made. To address this problem, every HTTP response has a status code attached to it that determines if the request was a success or not. These status codes are also called response codes. They exist to inform the client about the status of the request. You have most likely heard about or seen the error: '404 - not found'. This is one of the most common HTTP status codes that informs the client that the resource you were looking for couldn't be found.
