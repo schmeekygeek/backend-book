@@ -84,7 +84,25 @@ At first glance, it may seem that both of these terms mean the same thing: To id
 In other words, **A URL is a subset of a URI.**
 
 ### Anatomy of an HTTP request
-An HTTP request sent by a client contains many parts that define its structure
+An HTTP request sent by a client contains many parts that define its structure. Let's try and understand them.
+
+Here is a response that is received upon calling the API *https://httpbin.org/get* using `curl`, a command-line tool used to transfer data from or to a server.
+
+```{=latex}
+\begin{center}
+```
+![A basic HTTP request's response](src/book/images/3.6.png){width=75%}
+```{=latex}
+\end{center}
+```
+1. **HTTP version:** The protocol version of HTTP being used.
+2. **Status Code:** The status code or response code, sent by the server, indicates the status of the request that was sent.
+3. **Headers:** This is the metadata.
+3. **Payload:** The data itself. In our case, the format of the data is `json`
+
+The type of request we sent was `GET`. `GET` is also called an HTTP verb. Let's understand what HTTP verbs are.
+
+### HTTP Verbs
 
 ### HTTP Headers
 HTTP headers let the client and servers share additional information when communicating using HTTP.
