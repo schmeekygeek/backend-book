@@ -1,38 +1,38 @@
 - Introduction
 - Part 1
-- Introduction to backend development
-  - What is an api
-  - Why do we need an API?
-- Communication protocols
-  - TCP
-  - HTTP
-    - URL and URI
-    - Anatomy of an http request
-    - http Headers
-    - http status codes
-- authorisation and authentication (diagram)
-  - types of authentication
-    - 2-factor (2FA)
-    - multi-factor
-  -  types of authorisation
-    - role based auth
+x Introduction to backend development
+  x What is an api
+  x Why do we need an API?
+x Communication protocols
+  x TCP
+  x HTTP
+    x URL and URI
+    x Anatomy of an http request
+    x http Headers
+    x http status codes
+x authorisation and authentication (diagram)
+  x types of authentication
+    x 2-factor (2FA)
+    x multi-factor
+  x types of authorisation
+    x role based auth
 - Databases
-  - ACID
+  x ACID
   - schema
   - relational vs non-relational
   - CRUD
 - JSON
 - Architectural patterns
-  - 3-tier architecture (monolithic)
-    - why they're bad
-  - microservices
+  x 3-tier architecture (monolithic)
+    x why they're bad
+  x microservices
   - Rest and Graphql
 
 - Part 2 (go tutorial)
-- Introduction to the Go programming language
-  - (about go)
-  - first hello world
-- variables
+x Introduction to the Go programming language
+  x (about go)
+  x first hello world
+x variables
 - conditionals
 - functions
 - pointers
