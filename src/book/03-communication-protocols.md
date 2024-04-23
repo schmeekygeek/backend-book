@@ -98,14 +98,37 @@ Here is a response that is received upon calling the API *https://httpbin.org/ge
 1. **HTTP version:** The protocol version of HTTP being used.
 2. **Status Code:** The status code or response code, sent by the server, indicates the status of the request that was sent.
 3. **Headers:** This is the metadata.
-3. **Payload:** The data itself. In our case, the format of the data is `json`
+4. **Payload:** The data itself. In our case, the format of the data is `json`
 
-The type of request we sent was `GET`. `GET` is also called an HTTP verb. Let's understand what HTTP verbs are.
+The type of request that we sent above was a `GET` request. `GET` is also called an HTTP verb. Let's look at some of these attributes of HTTP requests.
 
 ### HTTP Verbs
+HTTP verbs are request methods that let us specify certain actions to be performed with our HTTP requests. They essentially are a vague type of the request that we are sending. For example, if we are trying to fetch a resource, we will use the `GET` method in the request, and make our backend accept the same. If we are trying to send some kind of data, we may have to use the `POST` method. There are many HTTP verbs, each having their own significant meaning. However, there are four fundamental HTTP verbs that are most commonly used in backend development. They are:
+
+1. **GET:** Get or fetch a certain resource from an API endpoint.
+2. **POST:** Send some data to the server.
+3. **PUT:** Update a resource on the server.
+4. **DELETE:** Delete a resource on the server.
+
+These HTTP verbs are also called as CRUD operations where CRUD stands for CREATE (POST), READ (GET), UPDATE (PUT) and DELETE. Some other HTTP verbs include, CONNECT, HEAD, OPTIONS, PATCH, etc.
 
 ### HTTP Headers
-HTTP headers let the client and servers share additional information when communicating using HTTP.
+HTTP headers let the client and servers share information additional to the payload when communicating over HTTP. They are also called metadata because they contain the data that is used to describe the payload and/or used to set other options and flags. Headers are set as key-value pairs separated by a ':' (colon).
+
+There are 3 types of headers:
+
+1. **Request headers:** Headers set by the client containing information about the client or more information about the resource being requested.
+2. **Response headers:** Headers set by the server that contain details about the server or time, etc.
+3. **Payload headers:** Client or server independent headers that provide details about the payload.
+
+Here are some of the most common HTTP headers:
+
+- `user-agent`: Client application or web browser identifier.
+- `authorization`: Used to set any credential or bearer token that the server might need whenever accessing a protected resource. Usually a JWT (JSON Web Token).
+- `content-type`: Indicates the media type of the resource.
+- `content-length`: Length of the content (in bytes).
+- `cookie`: Sent by the client to help the server recognize a session or a user.
+- `accept`: Sent by the client to indicate media types that are acceptable.
 
 ### HTTP Status Codes
 When we interact with APIs, it is necessary for us to know what happened with the request that was sent. Has it completed successfully, did something go wrong, if yes, what went wrong? Is the request being processed, am I being redirected, etc., are many such questions that arise when a request is made. To address this problem, every HTTP response has a status code attached to it that determines if the request was a success or not. These status codes are also called response codes. They exist to inform the client about the status of the request. You have most likely heard about or seen the error: '404 - not found'. This is one of the most common HTTP status codes that informs the client that the resource you were looking for couldn't be found.
