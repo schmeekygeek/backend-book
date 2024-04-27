@@ -27,7 +27,7 @@ Let's look at these characteristics one by one.
 
 1. **Atomicity:** Guarantees that transactions are either completed or are discarded. If a transaction or operation begins but fails to conclude successfully, the transaction is rolled back and all changes are discarded.
 2. **Consistency:** It refers to the ability of the database to maintain data integrity constraints. So if the constraint of a field is that it should only contain text, writing an integer value to it will fail.
-3. **Isolation:** Makes sure that all transactions that run concurrently on a unit of data are isolated from each other. Meaning that if we were to withdraw 100$ and 50$ from an account containing 300$, they both will run in isolation and the end result would be 150$ instead of 250$ or 200$.
+3. **Isolation:** Makes sure that all transactions that run concurrently on a unit of data are isolated from each other. Meaning that if we were to withdraw 100$ and 50$ from an account containing 300\$, they both will run in isolation and the end result would be 150$ instead of 250$ or 200$.
 4. **Durability:** It is the ability of the database to persist data safely, even in circumstances such as power outages that are usually unexpected and uncalled for.
 
 Let us now understand what a database schema is.
