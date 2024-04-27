@@ -18,6 +18,7 @@ x authorisation and authentication (diagram)
   x types of authorisation
     x role based auth
 - Databases
+  - SQL
   x ACID
   - schema
   - relational vs non-relational
