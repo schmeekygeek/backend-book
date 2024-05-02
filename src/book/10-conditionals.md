@@ -12,14 +12,19 @@ if <condition> {
     // todo
 }
 ```
-Example:
+Let's look at this example of a program that checks if a person is eligible to vote or not:
 ```go
 age := 18
 if age >= 18 {
     fmt.Println("Eligible")
+} else {
+    fmt.Println("Not Eligible")
 }
 ```
-You may or may not surround the condition with parentheses. Also, it is necessary to know that the `else if` or `else` keywords must start right after the last block's curly brace ends. This won't compile:
+You may or may not surround the condition with parentheses. You can also nest multiple `if-else` statements inside each other.
+
+
+> **Note**: It is necessary to know that the `else if` or `else` keywords must start right after the last block's curly brace ends. This won't compile:
 ```go
 if <condition> {
 
@@ -63,6 +68,6 @@ case 1:
 case 2:
     fmt.Println("Two")
 default:
-    fmt.Println("Not one or two ")
+    fmt.Println("Not one or two")
 }
 ```
