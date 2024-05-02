@@ -3,6 +3,7 @@ PANDOCFLAGS = --pdf-engine=xelatex \
 							--highlight-style=tango \
 							-V documentclass=book \
 							-V papersize=A5 \
+							-V linkcolor:blue \
 							-V monofont=Iosevka\ Nerd\ Font\ Complete.ttf \
 							-V geometry:margin=0.7in \
 							-o dist/book.pdf \

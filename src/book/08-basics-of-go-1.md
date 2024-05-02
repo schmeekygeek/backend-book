@@ -16,7 +16,7 @@ Let's write our first Hello World application using Go next.
 
 Type and save the following code in a file called `main.go`, or any filename of your choice.
 
-```{.go .numberLines}
+```go
 // main.go
 package main // 1.
 
@@ -239,4 +239,61 @@ default:
 ```
 
 ## Functions
+You define functions in Go using the `func` keyword.
 
+Syntax:
+
+```go
+func <function-name>(<identifier1> <type1>, ...) <return-type> {
+    // do something
+    return <value>
+}
+```
+
+Note that the datatype comes after the variable name or identifier. You may or may not have a return type to your function. But if you do have one, you must return an appropriate value pertaining to that return type. You also don't need to write the datatype for multiple parameters that have the same datatype. You can just write the parameter names by separating them with commas and adding the datatype at the end. For example:
+
+```go
+func sum(x, y int) int {
+    return x + y
+}
+```
+
+### Passing *n* parameters
+If you're uncertain of the number of the parameters that the function must take, you can use the `...` operator. The resultant value of the passed parameter will be an array that you can iterate over.
+
+Example:
+```go
+func getSum(nums ...int) int {
+  sum := 0
+  for _, val := range nums {
+    sum += val
+  }
+  return sum
+}
+```
+> *Note:* We will learn about `range` and arrays shortly.
+
+### Anonymous functions
+Anonymous functions are also called inline functions or lambda functions in some programming languages. They're useful if you're trying to create a short function body and assign it to a variable to perform some small redundant tasks.
+
+Syntax: 
+```go
+<identifier> := func (<parameters>) <return-type> {
+  return <val>
+}
+```
+
+You don't need to have a function identifier or name because the variable name that you assign the function to will be used to invoke it.
+
+Example:
+```go
+func main() {
+
+    sum := func (x, y int) int {
+      return x + y
+    }
+
+    fmt.Println(sum(7, 6)) // prints 13
+    fmt.Println(sum(1, 1)) // prints 2
+}
+```
