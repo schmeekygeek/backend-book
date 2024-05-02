@@ -1,6 +1,6 @@
 PANDOCFLAGS = --pdf-engine=xelatex \
 							--indented-code-classes=javascript \
-							--highlight-style=kate \
+							--highlight-style=tango \
 							-V documentclass=book \
 							-V papersize=A5 \
 							-V monofont=Iosevka\ Nerd\ Font\ Complete.ttf \
