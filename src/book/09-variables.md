@@ -15,6 +15,10 @@ We make use of the `var` keyword to create variables. If you declare a variable 
 
 Example:
 ```go
+package main
+
+import "fmt"
+
 func main() {
     var name string
     name = "Josh"
@@ -67,4 +71,25 @@ Using the `:=` operator:
 foo, bar, baz := 1, "hello", true
 ```
 
-Let's learn how to write conditional statements.
+## Custom types
+In Go, it is possible to declare custom datatypes that are based on inbuilt datatypes internally by using the `type` keyword. 
+
+Syntax:
+```go
+type <identifier> <datatype>
+```
+
+Example:
+```go
+package main
+
+import "fmt"
+
+func main() {
+    type Number int
+    var age Number = 24
+    fmt.Println(age)
+} // prints 24
+```
+
+Let's learn how to write conditional statements next.
