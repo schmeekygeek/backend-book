@@ -17,17 +17,26 @@ x authorisation and authentication (diagram)
     x multi-factor
   x types of authorisation
     x role based auth
+- Backend Security
+  - What is hashing?
+    - password hashing
+  - SSL vs TLS
+    - how does key exchange work
+    - https
 - Databases
   - SQL
   x ACID
   - schema
   - relational vs non-relational
 - JSON
-- Architectural patterns
+- basics of system design
+  - architectural styles
+    - hateos, graphql, rest, soap
   x 3-tier architecture (monolithic)
     x why they're bad
   x microservices
-  - Rest and Graphql
+  - scaling
+  - rate limiting
 
 - Part 2 (go tutorial)
 x Introduction to the Go programming language
