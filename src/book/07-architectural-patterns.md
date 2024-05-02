@@ -1,4 +1,6 @@
-# Backend Architecture
+# Basics of System Design
+
+Now that we've covered most basic backend development concepts, let us try and understand a little about how backend applications are architected. Writing efficient and fast code is important, but it is also necessary to have a proper high level design that puts everything together such that components act cohesively and are utilised effectively.
 
 ## Architectural styles
 
@@ -10,7 +12,6 @@
 
 ### Hateos
 
-Now that we've covered most basic backend development concepts, let us try and understand a little about how backend applications are architectured. Writing efficient and fast code is important, but it is also necessary to have a proper high level design that puts everything together such that components are cohesive and utilised effectively.
 
 ## 3-tier or monolithic applications
 An application that consists of the following three parts: The UI, the backend and the database, is known as a 3-tier application.
