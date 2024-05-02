@@ -19,7 +19,7 @@ if age >= 18 {
     fmt.Println("Eligible")
 }
 ```
-You may or may not surround the condition with parentheses. Also, it is necessary to know that the `else if` or `else` keywords must start right after the previous block ends. This won't compile.
+You may or may not surround the condition with parentheses. Also, it is necessary to know that the `else if` or `else` keywords must start right after the last block's curly brace ends. This won't compile:
 ```go
 if <condition> {
 
@@ -28,12 +28,12 @@ else if <condition> {
 
 }
 ```
-Go also provides a special option to initialize a variable before testing the condition as follows:
+Go also provides a special option to initialize a variable before the condition as follows:
 
 ```go
 age := 13
 if age = 18; age >= 18 {
-    fmt.Println("eligible") // Prints eligible
+    fmt.Println("Eligible") // Prints Eligible
 }
 ```
 > **Note**: The value assigned to the variable will persist even after the scope of the conditional ends.
@@ -47,23 +47,22 @@ Here's the syntax of a switch statement in Go:
 switch <variable> {
 case <value>:
     // todo
-case <value>:
-    // todo
 default:
     // todo
 }
 ```
+
+You can have as many cases as you want.
+
 Example:
 ```go
-num := 3
+num := 2
 switch num {
 case 1:
     fmt.Println("One")
 case 2:
     fmt.Println("Two")
-case 3:
-    fmt.Println("Three")
 default:
-    fmt.Println("Not one, two or three")
+    fmt.Println("Not one or two ")
 }
 ```
