@@ -28,10 +28,10 @@ x authorisation and authentication (diagram)
   x ACID
   - schema
   - relational vs non-relational
-- JSON
+  - database sharding
 - basics of system design
   - architectural styles
-    - hateos, graphql, rest, soap
+    - graphql vs rest
   x 3-tier architecture (monolithic)
     x why they're bad
   x microservices
