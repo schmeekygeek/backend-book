@@ -44,7 +44,7 @@ x Introduction to the Go programming language
   x first hello world
 x variables
 x conditionals
-- functions
+x functions
 - pointers
 - structs and interfaces
 - data structures

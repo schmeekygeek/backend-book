@@ -96,7 +96,7 @@ Here is a response that is received upon calling the API *https://httpbin.org/ge
 \end{center}
 ```
 1. **HTTP version:** The protocol version of HTTP being used.
-2. **Status Code:** The status code or response code, sent by the server, indicates the status of the request that was sent.
+2. **Status Code:** The status code or response code, sent by the server, indicating the status of the request sent.
 3. **Headers:** This is the metadata.
 4. **Payload:** The data itself. In our case, the format of the data is `json`
 
