@@ -1,4 +1,4 @@
-\part{Project}
+\part{Basics of Go}
 # Basics of Go I
 In this part, we'll start with learning the basics of the Go programming language. We won't delve into every little detail there is about programming in Go, but we will cover those that are crucial going forward in this book.
 
