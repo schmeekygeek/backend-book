@@ -2,15 +2,12 @@
 
 // system design introduction
 
-Now that we've covered most basic backend development concepts, let us try and understand a little about how backend applications are architected. Writing efficient and fast code is important, but it is also necessary to have a proper high level design that puts everything together such that components act cohesively and are utilised effectively.
+Now that we've covered most basic backend development concepts, let us try and understand a little about how backend applications are architected. Writing efficient and fast code is important, but it is also necessary to architect software and have a proper high level design that puts everything together such that components act cohesively and are utilised effectively, and efficiently. Let's learn about this process of designing a good backend solution.
 
 ## What is System Design?
+**System design is the study of the high level design of backend applications.** In other words, it is the process of architecting software and putting components and pieces in the right places to be used in the best way possible.
 
-## Architectural styles
-
-### REST
-
-### GraphQL
+// TODO: figure add system design diagram
 
 ## Monolithic or 3-tier applications
 An application that consists of the following three parts: The UI, the backend and the database, is known as a 3-tier application.
@@ -48,8 +45,22 @@ We briefly talked about how monolithic applications are difficult to scale in Se
 
 ## Scaling
 In the practical world, scaling is the process of increasing supply to meet growing demands.
-In the context of programming and backend development, it is generally used to describe the process of increasing computational power such that demands like, a growing userbase, are met.
+In the context of programming and backend development, it is generally used to describe the process of increasing computational power such that demands like, a growing userbase, are met. The ability of a backend application to scale easily on demand is called its scalability. Scalability is also an important aspect to consider when designing backend solutions. Now, there are two types of scaling, **Vertical** and **Horizontal** scaling, with each of them having their own quirks, advantages and disadvantages. Let's go over them.
 
-// horizontal and vertical scaling
+### Vertical scaling
+Vertical scaling is the process of increasing or upgrading a single machine's or hosts' computing capability and strength to meet the increasing demands. If your machine, having 2 cores and a gigabyte of RAM, is struggling to serve, say, 10 users at the same time, you might want to consider adding another gigabyte to the machine to make it more capable than it previously was. Vertical scaling is simple, but it can also get pretty expensive and pricier as you keep climbing up the ladder.
 
-// figure: we need new workers
+***Pros:***
+
+- Great for a single quick upgrade
+- 
+
+***Cons:***
+- Limit to how much you can upgrade
+
+
+// TODO: figure: sam going to the gym
+
+### Horizontal scaling
+
+// TODO: figure: many workers
