@@ -1,5 +1,6 @@
 \part{Project BlogSpace}
 
+**leave for part II of the book**
 # Project Outline
 *BlogSpace* is a simple blogging platform that we will be building together in this book. Building a project after you've learnt some concepts is a great way to cement the knowledge and grok the true meaning and purpose of a concept inside your mind. We are going to build *BlogSpace* step-by-step, covering each detail, feature implementation and code, line-by-line. Most of the endpoints that we'll build, will be simple CRUD operations so that you pick them up easily. Note that we won't be building the frontend of the entire application as that is beyond the scope of this book. However, we will be testing and trying out our application's API endpoints using tools such as *Postman* (An API testing application) and `curl`. Let's go over the features that we will be implementing in *BlogSpace.* 
 
@@ -21,4 +22,3 @@
 - *Blog editing*
 - *Like blogs*
 - *Search for blogs*
-- *

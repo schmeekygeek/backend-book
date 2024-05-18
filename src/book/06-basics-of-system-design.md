@@ -58,7 +58,6 @@ Vertical scaling is the process of increasing or upgrading a single machine's or
 ***Cons:***
 - Limit to how much you can upgrade
 
-
 // TODO: figure: sam going to the gym
 
 ### Horizontal scaling
