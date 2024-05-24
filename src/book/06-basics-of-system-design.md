@@ -48,18 +48,21 @@ In the practical world, scaling is the process of increasing supply to meet grow
 In the context of programming and backend development, it is generally used to describe the process of increasing computational power such that demands like, a growing userbase, are met. The ability of a backend application to scale easily on demand is called its scalability. Scalability is also an important aspect to consider when designing backend solutions. Now, there are two types of scaling, **Vertical** and **Horizontal** scaling, with each of them having their own quirks, advantages and disadvantages. Let's go over them.
 
 ### Vertical scaling
-Vertical scaling is the process of increasing or upgrading a single machine's or hosts' computing capability and strength to meet the increasing demands. If your machine, having 2 cores and a gigabyte of RAM, is struggling to serve, say, 10 users at the same time, you might want to consider adding another gigabyte to the machine to make it more capable than it previously was. Vertical scaling is simple, but it can also get pretty expensive and pricier as you keep climbing up the ladder.
+Vertical scaling is the process of increasing or upgrading a single machine's or hosts' computing capability and strength to meet the increasing demands. If your machine, having 2 cores and a gigabyte of RAM, is struggling to serve, say, 10 users at the same time, you might want to consider adding another gigabyte to the machine to make it more capable than it previously was. Vertical scaling is simple, but it can also get pretty expensive and pricier as you keep climbing up the ladder. There is also a limit as to how much you can scale vertically, due to our current technological limitations. Scaling vertically can be different for different ways of upgrading that may be required. If you are running a database server, you might consider increasing the storage capacity of the disks to which your data is being written. If you want to run a highly responsive server, you should consider increasing its processing power.
 
 ***Pros:***
 
 - Great for a single quick upgrade
-- 
+- Cost effective, for smaller upgrades.
 
 ***Cons:***
-- Limit to how much you can upgrade
+- There are limitations to how much you can upgrade.
+- Can get pricey after a certain threshold.
+- May require you to upgrade other parts in order to upgrade the one you want to.
 
 // TODO: figure: sam going to the gym
 
 ### Horizontal scaling
+Horizontal scaling is the process of increasing the number of host machines or servers instead of increasing a singular machine's computing capacity. A load balancer is another machine used when scaling horizontally. It sits in front of the host machines usually running a software that distributes the workload evenly such that one machine or host is not overwhelmed completely. Horizontal scaling has many advantages since you can have as many computers as you like, doing work. It is also a much viable option in the long run because you can simply add another machine to the group of servers you may be running to ease the workload of the others.
 
 // TODO: figure: many workers
