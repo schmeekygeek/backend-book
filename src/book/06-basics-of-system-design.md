@@ -1,7 +1,5 @@
 # Basics of System Design
 
-// system design introduction
-
 Now that we've covered most basic backend development concepts, let us try and understand a little about how backend applications are architected. Writing efficient and fast code is important, but it is also necessary to architect software and have a proper high level design that puts everything together such that components act cohesively and are utilised effectively, and efficiently. Let's learn about this process of designing a good backend solution.
 
 ## What is System Design?
@@ -30,10 +28,11 @@ At a glance, this may seem like a backend solution that is good enough and will 
 The microservice architecture aims to solve problems with the monolithic architecture by having multiple loosely coupled servers that run independently. Each server or node has its own purpose and multiple nodes communicate with each other via lightweight APIs.
 
 For example, if you have an e-commerce application, you can have multiple services for each task: One for managing users, one for storing application-wide configurations, one for cropping and resizing images, interacting with a database and others. An API gateway sits between these services and will redirect requests to them accordingly.
+
 ```{=latex}
 \begin{center}
 ```
-![Microservice architecture](src/book/images/7.2.png){width=60%}
+![Microservice architecture](src/book/images/7.2.png){width=80%}
 ```{=latex}
 \end{center}
 ```
@@ -56,13 +55,29 @@ Vertical scaling is the process of increasing or upgrading a single machine's or
 - Cost effective, for smaller upgrades.
 
 ***Cons:***
+
 - There are limitations to how much you can upgrade.
 - Can get pricey after a certain threshold.
 - May require you to upgrade other parts in order to upgrade the one you want to.
 
-// TODO: figure: sam going to the gym
+
+```{=latex}
+\begin{center}
+```
+![Scaling vertically: Sam increases his strength](src/book/images/7.3.png){width=60%}
+```{=latex}
+\end{center}
+```
 
 ### Horizontal scaling
 Horizontal scaling is the process of increasing the number of host machines or servers instead of increasing a singular machine's computing capacity. A load balancer is another machine used when scaling horizontally. It sits in front of the host machines usually running a software that distributes the workload evenly such that one machine or host is not overwhelmed completely. Horizontal scaling has many advantages since you can have as many computers as you like, doing work. It is also a much viable option in the long run because you can simply add another machine to the group of servers you may be running to ease the workload of the others.
 
-// TODO: figure: many workers
+```{=latex}
+\begin{center}
+```
+![Scaling horizontally: Sam requests for more manpower](src/book/images/7.4.png){width=40%}
+```{=latex}
+\end{center}
+```
+
+In conclusion, horizontal and vertical are two scaling methods that should be used based on the performance requirements, cost, etc.
