@@ -95,6 +95,7 @@ Here is a response that is received upon calling the API *https://httpbin.org/ge
 ```{=latex}
 \end{center}
 ```
+
 1. **HTTP version:** The protocol version of HTTP being used.
 2. **Status Code:** The status code or response code, sent by the server, indicating the status of the request sent.
 3. **Headers:** This is the metadata.
@@ -145,14 +146,34 @@ Range          | Message
 
 Here are some of the most common status codes used today:
 
-Code | Description
----  | ----------
-200  | *OK* - The request was successful.
-201  | *CREATED* - Created a new resource, such as an account.
-400  | *BAD REQUEST* - Invalid or malformed request
-401  | *UNAUTHORIZED* - Client is unauthorized, needs authentication.
-403  | *FORBIDDEN* - Client is forbidden to access the resource.
-404  | *NOT FOUND* - The resource/s requested couldn't be found
-500  | *INTERNAL SERVER ERROR* - Something went wrong at the server side
+Code|Description
+--- |----------
+200 | `ok`
+201 | `created`
+400 | `bad request`
+401 | `unauthorized`
+403 | `forbidden`
+404 | `not found`
+500 | `internal server error`
+
+### The problem with HTTP
+Now that we've discussed all the quirks of HTTP, there is still one small caveat about it. HTTP is based on a request-response model, mostly used in RESTful APIs (more on this later) meaning that you can't get data from a server without requesting for it initially.
+Suppose, you are trying to build a video streaming platform where you can have users stream some kind of audio or video and have clients that are feeded that data.
+You can't optimally achieve this by using traditional HTTP because you'll have to poll the server and request it to send you the frames of data. Ideally you'd want the server to stream the data to you until the client connection ends.
+To give you another example, say you want to build a chat application. You can have a server that you send details such as the content of the message, to whom the message is meant for, etc. The server cannot directly send this message to the client for whom the message is meant to go to. The recipient would need to poll the server at regular intervals and ask if there are any new messages, which is not very ideal.
+
+```{=latex}
+\begin{center}
+```
+![The server is annoyed at Sam's requests](src/book/images/3.7.png){width=75%}
+```{=latex}
+\end{center}
+```
+
+You'd be wasting precious resources of the server and the user, requesting data that simply doesn't exist. Another solution would be to make use of a technique called long-polling, where you send a request but instead of receiving a response immediately, you keep the connection open so that the server can respond whenever it receives a message. But all of these are just work-arounds and not actual solutions. This is where a special protocol, Websocket, comes in.
+
+## Websocket
+Websocket is a special type of communication protocol built on top of HTTP that allows for bi-directional communication between the client and the server. A websocket server can have multiple websocket connections open at a time to which it can send and receive data from.
+You can think of a websocket connection as a pipeline where the data is not synchronized and any party can send and receive data whenever they want, as long as the connection is open. This protocol becomes an ideal choice for applications where the server also has a lot of data to send like a video streaming platform such as YouTube, or doesn't know when new data will be available for a client. Websocket connections are made by establishing a handshake, similar to TCP, between two hosts. It is established after upgrading an initially made HTTP connection to a websocket connection with the use of HTTP headers.
 
 In the next chapter we shall learn about two basic security mechanisms that APIs implement in order to serve the right client.

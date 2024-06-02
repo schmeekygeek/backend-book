@@ -3,7 +3,7 @@
 x Introduction to backend development
   x What is an api
   x Why do we need an API?
-x Communication protocols
+- Communication protocols
   x TCP
   x HTTP
     x URL and URI
@@ -11,6 +11,7 @@ x Communication protocols
     x http verbs
     x http Headers
     x http status codes
+  - Websockets
 x authorisation and authentication (diagram)
   x types of authentication
     x 2-factor (2FA)
