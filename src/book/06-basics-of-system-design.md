@@ -83,7 +83,7 @@ Horizontal scaling is the process of increasing the number of host machines or s
 In conclusion, horizontal and vertical are two scaling methods that should be used based on the performance requirements, cost, etc.
 
 ## Rate limiting
-When we design backend applications, it is necessary to protect it from malpractices and certain actions from attackers that may compromise our servers and prevent our users from being served. One of the biggest examples of these kinds of practices is DoS attacks.
+When we design backend applications, it is necessary to protect it from malpractices and certain actions from attackers that may compromise our servers and prevent our users from being served. One of the biggest examples of these kinds of attacks is DoS attacks.
 
 ### What are DoS attacks
-
+*DoS* attacks or *Denial of Service* attacks are attacks that are meant to overwhelm or overpower a remote server so as to render it useless for actual users who rely on it.
