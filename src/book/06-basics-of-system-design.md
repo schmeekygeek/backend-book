@@ -85,5 +85,6 @@ In conclusion, horizontal and vertical are two scaling methods that should be us
 ## Rate limiting
 When we design backend applications, it is necessary to protect it from malpractices and certain actions from attackers that may compromise our servers and prevent our users from being served. One of the biggest examples of these kinds of attacks is DoS attacks.
 
-### What are DoS attacks
-*DoS* attacks or *Denial of Service* attacks are attacks that are meant to overwhelm or overpower a remote server so as to render it useless for actual users who rely on it.
+### DoS attacks
+*DoS* attacks or *Denial of Service* attacks are attacks that are meant to overwhelm or overpower a remote server so as to render it useless for actual users who rely on it. These kinds of attacks are usually performed by attackers who may have ill intent towards a particular business or someone. Denial of Service is achieved by spamming a service with many meaningless requests and worthless data with the help of automated scripts and applications.
+
