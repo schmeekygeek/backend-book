@@ -172,6 +172,8 @@ To give you another example, say you want to build a chat application. You can h
 
 You'd be wasting precious resources of the server and the user, requesting data that simply doesn't exist. Another solution would be to make use of a technique called long-polling, where you send a request but instead of receiving a response immediately, you keep the connection open so that the server can respond whenever it receives a message. But all of these are just work-arounds and not actual solutions. This is where a special protocol, Websocket, comes in.
 
+> It is necessary to know that Websocket is not a better protocol than HTTP, it's just that they're both different tools meant for different use-cases. You should pick the right tool for the job and not the other way around.
+
 ## Websocket
 Websocket is a special type of communication protocol built on top of HTTP that allows for bi-directional communication between the client and the server. A websocket server can have multiple websocket connections open at a time to which it can send and receive data from.
 You can think of a websocket connection as a pipeline where the data is not synchronized and any party can send and receive data whenever they want, as long as the connection is open. This protocol becomes an ideal choice for applications where the server also has a lot of data to send like a video streaming platform such as YouTube, or doesn't know when new data will be available for a client. Websocket connections are made by establishing a handshake, similar to TCP, between two hosts. It is established after upgrading an initially made HTTP connection to a websocket connection with the use of HTTP headers.
