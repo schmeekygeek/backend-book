@@ -38,3 +38,4 @@ x authorisation and authentication (diagram)
   x microservices
   - scaling
   - rate limiting
+    - dos attacks
