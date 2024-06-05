@@ -8,13 +8,20 @@ PANDOCFLAGS = --pdf-engine=xelatex \
 							-V linkcolor:blue \
 							-V monofont=$(FONT) \
 							-V geometry:margin=0.7in \
-							-o dist/book.pdf \
 							--table-of-contents \
 							--number-sections \
 							-f markdown+implicit_figures \
 							metadata.txt \
 
-book:
+pdf:
 	mkdir -p dist && \
 		pandoc src/book/*.md \
+		-o dist/book.pdf \
+		$(PANDOCFLAGS)
+
+
+epub:
+	mkdir -p dist && \
+		pandoc src/book/*.md \
+		-o dist/book.epub \
 		$(PANDOCFLAGS)

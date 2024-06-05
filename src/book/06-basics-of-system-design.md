@@ -80,7 +80,7 @@ Horizontal scaling is the process of increasing the number of host machines or s
 \end{center}
 ```
 
-In conclusion, horizontal and vertical are two scaling methods that should be used based on the performance requirements, cost, etc.
+In conclusion, horizontal and vertical are two scaling methods that should be used after considering tradeoffs such as performance, cost effectiveness, etc.
 
 ## Rate limiting
 When we design backend applications, it is necessary to protect it from malpractices and certain actions from attackers that may compromise our servers and prevent our users from being served. One of the biggest examples of these kinds of attacks is DoS attacks.
