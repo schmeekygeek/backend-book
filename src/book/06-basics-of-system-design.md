@@ -85,6 +85,8 @@ In conclusion, horizontal and vertical are two scaling methods that should be us
 ## Rate limiting
 When we design backend applications, it is necessary to protect it from malpractices and certain actions from attackers that may compromise our servers and prevent our users from being served. One of the biggest examples of these kinds of attacks is DoS attacks.
 
-### DoS attacks
-*DoS* attacks or *Denial of Service* attacks are attacks that are meant to overwhelm or overpower a remote server so as to render it useless for actual users who rely on it. These kinds of attacks are usually performed by attackers who may have ill intent towards a particular business or someone. Denial of Service is achieved by spamming a service with many meaningless requests and worthless data with the help of automated scripts and applications.
+*DoS* attacks or *Denial of Service* attacks are attacks that are meant to overwhelm or overpower a remote server so as to render it useless for actual users who rely on it. These kinds of attacks are usually performed by attackers who may have ill intent towards a particular business or someone. Denial of Service is achieved by spamming a service with many meaningless requests and worthless data with the help of automated scripts and applications. In order to prevent such a type of attack, we use a mechanism called rate-limiting. It is also necessary to rate-limit requests and have a maximum of requests per unit time so that they are unable to use brute-force algorithms to find passwords of users.
 
+Rate limiting is the process of limiting or throttling the amount of incoming requests so as to prevent the server from being overwhelmed and continue to serve our users. There are multiple ways to limit or throttle incoming requests, or, rate-limiting algorithms that are present in practice today. Let's go over a few of the most used ones:
+
+### Leaky bucket algorithm

@@ -1,4 +1,8 @@
-# Security practices in backend development
+# Backend Security
+When we write backend applications, it is necessary to have good security around it. Building performant, fault-tolerant applications that are efficient and serve our users is one thing, but it is also necessary to make our application secure so that critical data is not compromised. As the complexity of our application rises, so does the vulnerabilities. Addressing these vulnerabilities and finding solutions to them is vital. Securing a backend application is a formidable task, especially when not equipped with the knowledge of the best practices, severity of attacks, and how someone can use them to gain information that they're not supposed to possess. But thankfully, due to our current understanding of backend application security, there are quite a few things that we can do in order to make sure those pesky attackers stay away. Let's go over them.
+
+## Password hashing
+When we store login information, most of the time, we will have data such as emails, phone numbers, and others. Out of these credentials, one of it is sure to be the password of a user, atleast when you're building an authentication system for your application from the ground up, and not relying on other tools such as Okta, and Google sign-in. This password is crucial to grant access to a user's account. Such a credential is not stored in plain-text as the gravity of losing such a credential can have large consequences.
 
 ## Authentication and Authorisation
 
