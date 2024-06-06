@@ -17,7 +17,7 @@ The word 'monolith' means any structure carved out of a singular stone. In the c
 ```{=latex}
 \begin{center}
 ```
-![3-tier application](src/book/images/7.1.png){width=60%}
+![3-tier application](src/book/images/6.1.png){width=60%}
 ```{=latex}
 \end{center}
 ```
@@ -32,7 +32,7 @@ For example, if you have an e-commerce application, you can have multiple servic
 ```{=latex}
 \begin{center}
 ```
-![Microservice architecture](src/book/images/7.2.png){width=80%}
+![Microservice architecture](src/book/images/6.2.png){width=80%}
 ```{=latex}
 \end{center}
 ```
@@ -64,7 +64,7 @@ Vertical scaling is the process of increasing or upgrading a single machine's or
 ```{=latex}
 \begin{center}
 ```
-![Scaling vertically: Sam increases his strength](src/book/images/7.3.png){width=60%}
+![Scaling vertically: Sam increases his strength](src/book/images/6.3.png){width=60%}
 ```{=latex}
 \end{center}
 ```
@@ -75,7 +75,7 @@ Horizontal scaling is the process of increasing the number of host machines or s
 ```{=latex}
 \begin{center}
 ```
-![Scaling horizontally: Sam requests for more manpower](src/book/images/7.4.png){width=40%}
+![Scaling horizontally: Sam requests for more manpower](src/book/images/6.4.png){width=40%}
 ```{=latex}
 \end{center}
 ```
