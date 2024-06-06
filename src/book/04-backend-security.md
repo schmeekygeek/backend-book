@@ -1,8 +1,23 @@
-# Backend Security
+# Backend Security and Cryptography
 When we write backend applications, it is necessary to have good security around it. Building performant, fault-tolerant applications that are efficient and serve our users is one thing, but it is also necessary to make our application secure so that critical data is not compromised. As the complexity of our application rises, so does the vulnerabilities. Addressing these vulnerabilities and finding solutions to them is vital. Securing a backend application is a formidable task, especially when not equipped with the knowledge of the best practices, severity of attacks, and how someone can use them to gain information that they're not supposed to possess. But thankfully, due to our current understanding of backend application security, there are quite a few things that we can do in order to make sure those pesky attackers stay away. Let's go over them.
 
 ## Password hashing
-When we store login information, most of the time, we will have data such as emails, phone numbers, and others. Out of these credentials, one of it is sure to be the password of a user, atleast when you're building an authentication system for your application from the ground up, and not relying on other tools such as Okta, and Google sign-in. This password is crucial to grant access to a user's account. Such a credential is not stored in plain-text as the gravity of losing such a credential can have large consequences.
+When we store login information, most of the time, we will have data such as emails, phone numbers, and others. Out of these credentials, one of it is sure to be the password of a user, atleast when you're building an authentication system for your application from the ground up, and not relying on other tools such as Okta, and Google sign-in. This password is crucial to grant access to a user's account. Such a credential is not stored in plain-text as losing such a credential can have large consequences. Instead of storing passwords itself as plain-text, we store its hash.
+
+### Hashing
+Hashing in cryptography and backend security, is the process of converting data, or a piece of text into an encrypted, fixed-length string of characters by making use of an algorithm, also called as a hash function. A hash of something is guaranteed to not change unless the data itself was modified, making it one of the most reliable methods to send data with no corruption, maintaining integrity. By converting your data into its hash with the help of a hash function, you can safely send it across the internet and have the recipient generate the hash of that data, and compare it with the hash that you generated. If it equals, then the data is unadulterated and safe to use, but if it is not, then it was most likely tampered with. But you might be asking: "What does this have to do with how we store passwords in our databases?"
+
+```{=latex}
+\begin{center}
+```
+![Hashing in action](src/book/images/4.1.png){width=80%}
+```{=latex}
+\end{center}
+```
+
+When we get a password to store, we generate its hash, and then store that hash instead of the password in plain-text. So, whenever a sign-in request arrives at our  backend, we get an email and a password generally. What we do is, we generate the hash of the password that was sent to us in the request, and then compare that hash with the hash that is stored on our side. If it equals, then the password is correct, and we grant the user the access to the account. A hash function will generate the same hash for the same unmodified data or text.
+
+You might be wondering how secure is a popular hashing algorithm such as SHA-256 (Simple Hashing Algorithm 256) really is. SHA-256
 
 ## Authentication and Authorisation
 
@@ -20,7 +35,7 @@ Now, a server may have multiple layers and authentication checks before simply h
 ```{=latex}
 \begin{center}
 ```
-![Sam fails an authentication check](src/book/images/4.1.png){width=30%}
+![Sam fails an authentication check](src/book/images/4.2.png){width=30%}
 ```{=latex}
 \end{center}
 ```
