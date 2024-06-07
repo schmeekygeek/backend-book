@@ -15,9 +15,9 @@ Hashing in cryptography and backend security, is the process of converting data,
 \end{center}
 ```
 
-When we get a password to store, we generate its hash, and then store that hash instead of the password in plain-text. So, whenever a sign-in request arrives at our  backend, we get an email and a password generally. What we do is, we generate the hash of the password that was sent to us in the request, and then compare that hash with the hash that is stored on our side. If it equals, then the password is correct, and we grant the user the access to the account. A hash function will generate the same hash for the same unmodified data or text.
+When we get a password to store, we generate its hash, and then store that hash instead of the password in plain-text. So, whenever a sign-in request arrives at our  backend, we get an email and a password generally. What we do is, we generate the hash of the password that was sent to us in the request, and then compare that hash with the hash that is stored on our side. If it equals, then the password is correct, and we grant the user the access to the account. A hash function will generate the same hash for the same unmodified data or text. One of the things to note about hashing is that you cannot decode data back from its hash, making it very secure for storing passwords and making sure that data is untouched.
 
-You might be wondering how secure is a popular hashing algorithm such as SHA-256 (Simple Hashing Algorithm 256) really is. SHA-256
+You might be wondering how secure is a popular hashing algorithm such as SHA256 (Simple Hashing Algorithm 256) really is. If you use SHA256, you have a chance of 1 in $2^{256}$ possibilities to guess the data correctly. $2^{256}$ is such an unfathombly large number, that it contains 77 digits after its most significant digit!
 
 ## Authentication and Authorisation
 
