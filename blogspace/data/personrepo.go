@@ -1,23 +1,24 @@
 package data
 
 import (
-  "github.com/jmoiron/sqlx"
-  _ "github.com/lib/pq"
+	"github.com/jmoiron/sqlx"
+	"github.com/lib/pq"
+	_ "github.com/lib/pq"
 )
 
 var DB *sqlx.DB
 
 type Person struct {
-  ID        int64  `db:"id" json:"id"` 
+  ID        int8  `db:"id" json:"id"` 
   FirstName string `db:"first_name" json:"first_name"`
   LastName  string `db:"last_name" json:"last_name"`
   Username  string `json:"username"`
   Email     string `json:"email"`
   Password  string `json:"password"`
-  Liked     []BlogID `json:"liked"`
+  Liked     []BlogID `db:"liked" json:"liked"`
 }
 
-type BlogID int64
+type BlogID int8
 
 type Blog struct {
   Title       string
@@ -31,13 +32,12 @@ const (
       id serial unique,
       first_name text,
       last_name  text,
-      email      text,
+      email      text unique,
+      username   text unique,
       password   text,
       liked int8[]
     );
   `
-
-
 )
 
 func Init() error {
@@ -54,6 +54,16 @@ func Init() error {
 }
 
 func CreatePerson(p *Person) error {
-
+  tx := DB.MustBegin()
+  tx.MustExec(
+    "INSERT INTO person (first_name, last_name, email, username, password, liked) VALUES ($1, $2, $3, $4, $5, $6)",
+    p.FirstName,
+    p.LastName,
+    p.Email,
+    p.Username,
+    p.Password,
+    pq.Array(p.Liked),
+  )
+  tx.Commit()
   return nil
 }

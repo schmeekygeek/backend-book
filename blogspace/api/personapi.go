@@ -2,6 +2,7 @@ package api
 
 import (
 	"encoding/json"
+	"fmt"
 	"log"
 	"net/http"
 
@@ -25,8 +26,13 @@ func CreatePerson(w http.ResponseWriter, r *http.Request) {
   p := data.Person{}
   decoder := json.NewDecoder(r.Body)
   err := decoder.Decode(&p)
+  fmt.Println(p)
   if err != nil {
-    log.Printf("Something went wrong: %v", err)
+    log.Printf("Error decoding data %v", err)
   }
-  log.Printf("Got person to save: %v", p)
+
+  err = data.CreatePerson(&p)
+  if err != nil {
+    log.Printf("Error creating person %v", err)
+  }
 }
