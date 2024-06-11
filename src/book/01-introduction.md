@@ -10,6 +10,9 @@ By the end of it all, you'll have many concepts pertaining to backend developmen
 
 I have tried my best to not include superfluous details about everything, much of which will be easy to understand with just a little research on your own. This book aims to take away the overwhelm that many beginners face and give you a headstart on your journey.
 
+## Motivation
+// TODO: add motivation
+
 ## Who this book is for
 This book is for anyone who is willing to learn and get into backend development.
 People switching careers may also find this book a great starting guide to get into the field.
