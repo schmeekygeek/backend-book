@@ -29,4 +29,10 @@ When learning about backend development, it is important to understand why we ne
 
 Communicating with the database directly is simply not optimal, as we need to have a central point of data-access that would take a request, know if the request is coming from a person that has the authority to make that request, read some data, run some code, perform some theatrics on that data, read some more data, write some logs to disk, perform other actions to then finally wrap up everything neatly in a response-body to be sent back to the client. 
 
+When building your application, it is highly recommended you separate your data-access layer and your application layer for a variety of reasons:
+
+- Scaling: If you decide to scale your application to meet growing demands of customers, you would simply need to add more servers running the same application code which won't need change.
+- Security: The mobile application code of your product can be decompiled and your database credentials can be placed in the wrong hands.
+- Flexibility: If you decide to migrate your database platform from SQL to MongoDB, for example, your client application code won't need to change as it only needs to know how to communicate to the API.
+
 In the next chapter we will understand how this communication between two machines over the internet takes place.
