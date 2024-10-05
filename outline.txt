@@ -12,18 +12,21 @@ x Introduction to backend development
     x http Headers
     x http status codes
   - Websockets
-x authorisation and authentication (diagram)
-  x types of authentication
-    x 2-factor (2FA)
-    x multi-factor
-  x types of authorisation
-    x role based auth
 - Backend Security
+  x authorisation and authentication (diagram)
+    x types of authentication
+  x 2-factor (2FA)
+    x multi-factor
+    x types of authorisation
+    x role based auth
   - What is hashing?
     - password hashing
+  - rate limiting
+    - dos attacks
   - SSL vs TLS
     - how does key exchange work
     - https
+
 - Databases
   - SQL
   x ACID
@@ -37,5 +40,3 @@ x authorisation and authentication (diagram)
     x why they're bad
   x microservices
   - scaling
-  - rate limiting
-    - dos attacks
