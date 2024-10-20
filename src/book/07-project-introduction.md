@@ -24,16 +24,24 @@
 - *Like blogs*
 - *Search for blogs*
 
-## Setting the scene
-For this project we'll be using Go (or Golang), specifically version 1.21. We won't be using any library or framework in our project except for a tiny one called `sqlx` which is a superset of the standard `database/sql` library in Go. Meaning it has everything that `database/sql` has and a few extra extensions such as prepared statements. That's it! We won't be needing any massive framework or library, or install huge dependencies to get things done, we just need an editor where we can write your code and the command-line where we'll execute the project. The reason for doing this is to help you understand how applications work at a lower level instead of abstracting everything away to a framework. Frameworks are great, but when your purpose is to learn, explore and understand, you should do so with as little help as possible.
+For this project we'll be using Go (or Golang), specifically version `1.21`. We won't be using any library or framework in our project except for a tiny one called `sqlx` which is a superset of the standard `database/sql` library in Go. Meaning it has everything that `database/sql` has and a few extra extensions such as prepared statements. That's it! We won't be needing any massive framework or library, or install huge dependencies to get things done, we just need an editor where we can write your code and the command-line where we'll execute the project. The reason for doing this is to help you understand how applications work at a lower level instead of abstracting everything away to a framework. Frameworks are great when building applications that just work, but when your purpose is to learn, explore and understand, you should do so with as little help as possible.
 
-### Why Go?
+## Why Go?
 You might be wondering why I chose Go for this project over something like Python, or maybe JavaScript.
 
 The simple answer is, **I just like Go.** 
 
 It is an extremely simple programming language that is very readable even if you're not familiar with it. One of the biggest perks of Go is that it has pretty much everything you'd need to build applications in its standard library.
 You mostly don't need to install huge and bulky dependencies to setup a simple project to try some things out. Also, did I mention that it is one of the very few programming languages that are *blazingly fast*?
-Writing Go is fun and I would highly recommend anyone passionate about programming to learn it.
+Writing Go is fun and I would highly recommend anyone passionate about programming to learn it. Let's begin!
 
+## Setting the scene
+Let us begin by creating an empty directory called 'blogspace', you can name this whatever you want. Head into it and initialize an empty `git` repository:
+```bash
+$ mkdir blogspace
+$ cd blogspace
+$ git init .
+Initialized empty Git repository in blogspace/
+```
 
+We will use `git` to track our changes and

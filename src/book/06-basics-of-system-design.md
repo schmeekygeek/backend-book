@@ -81,4 +81,3 @@ Horizontal scaling is the process of increasing the number of host machines or s
 ```
 
 In conclusion, horizontal and vertical are two scaling methods that should be used after considering tradeoffs such as performance, cost effectiveness, etc.
-
